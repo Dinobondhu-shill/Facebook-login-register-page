@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+input{
+    display: block;
+    padding: 11px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+.content{
+    margin: 10px;
+}
+.container{
+    width: 430px;
+    height: 550px;
+    background-color: transparent;
+    margin-top: 50px;
+    /* border: 1px solid #f1f1f1; */
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.head{
+    padding: 10px 0px 10px 10px;
+
+}
+.container h1{
+    font-size: 32px;
+    color: #1c1e21;
+    
+}
+.container p{
+    color: #606770;;
+    margin-top: 3px;
+    font-size: 15px;
+}
+.name{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    
+}
+.name input{
+    
+    width: 100%;
+    
+}
+.email_pass input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.date label{
+    font-size: 14px;
+    font-weight: normal;
+    color: #606770;
+   
+}
+.date input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.gender{
+    margin-bottom: 10px;
+    width: 100%;
+    /* background-color: #606770; */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.gender_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    width: 32%;
+    height: 40px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    font-size: 15px;
+
+}
+.label_gender{
+    color: #606770;;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.terms{
+    width: auto;
+}
+.terms p{
+    font-size: 12px;
+    font-weight: 200;
+    color: #1c1e21;
+    margin-bottom: 15px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    
+}
+.submit input{
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    padding: 0 32px;
+    cursor: pointer;
+}
+/* ================
+ validation part
+================= */
+.firstname{
+    position: relative;
+}
+.error{
+    width: 180px;
+    padding: 8px;
+    border: 1px solid red;
+    position: absolute;
+    top: 23.8%;
+    left: 21.5%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.error::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    left: 94%;
+    top: 30%;
+    transform: rotate(45deg);
+    z-index: -2;
+    
+}
+.surname{
+    position: relative;
+}
+.surnameerr{
+    width: 180px;
+    padding: 8px;
+    border: 1px solid red;
+    position: absolute;
+    top: 23.8%;
+    left: 65.5%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.surnameerr::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    left: -3%;
+    top: 30%;
+    transform: rotate(45deg);
+    z-index: -2;
+    
+}
+/* ==============
+email Error
+=============== */
+.email{
+    position: relative;
+}
+.emailerr{
+    width: 180px;
+    padding: 8px;
+    border: 1px solid red;
+    position: absolute;
+    top: 31.8%;
+    left: 65.3%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.emailerr::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    left: -3%;
+    top: 30%;
+    transform: rotate(45deg);
+    z-index: -2;
+    
+}
+/* Password err */
+.pass{
+    position: relative;
+}
+.passerr{
+    width: 180px;
+    padding: 8px;
+    border: 1px solid red;
+    position: absolute;
+    top: 39.8%;
+    left: 65.4%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.passerr::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    left: -3%;
+    top: 30%;
+    transform: rotate(45deg);
+    z-index: -2;
+    
+}

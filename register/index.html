@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <div class="content">
+        <form action="./New folder/welcome.html" >
+            <div class="head">
+                <h1>Sign Up</h1>
+                <p>It's quick and easy.</p>
+               </div>
+               <hr>
+               <div class="name">
+                <input type="text" placeholder="First Name" class="firstname">
+                <p class="firstnameerr error" >tgfggf</p>
+                <input type="text" placeholder="Surname" class="surname">
+                <p class="surnameerr"></p>
+               </div>
+               <div class="email_pass">
+                <input type=" tel" placeholder="Mobile number or Email Address" class="email">
+                <p  class="emailerr"></p>
+                <input type="password" placeholder="New Password" class="pass">
+                <p class="passerr"></p>
+               </div>
+               <div class="date">
+                <label>Date of birth?</label>
+                <input type="date" class="date">
+                <p class="dateerr"></p>
+               </div>
+               <p class="label_gender">Gender?</p>
+               <div class="gender">
+                    <div class="gender_box">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                    </div>
+                    <div class="gender_box">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                    </div>
+                    <div class="gender_box">
+                        <label for="custom">Custom</label>
+                        <input type="radio" id="custom" name="gender" value="Custom">
+                    </div>
+               </div>
+               <div class="terms">
+                <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a></p>
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+               </div>
+               <div class="submit">
+                <input type="submit" value="Sign Up" class="button">
+               </div>
+        </form>
+       </div>
+    </div>
+    <script src="code.jquery.com_jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
